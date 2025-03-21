@@ -1,32 +1,152 @@
-Link: https://www.electrosoftcloud.com/esp-now-conecta-dos-o-mas-esp32-esp8266/
+# ESP-NOW (Esclavo o Maestro)
+------------
 
-# ESP-NOW
-En esta ocasión te hablaré del protocolo ESP-Now, el cual podremos usarlo en nuestros mirocontroladores ESP32, ESP8266, y seguramente en el resto de familia ESP. ESP-Now es un protocolo de comunicación entre varios dispositivos creado por Espressif, el cual es similar al utilizado en los dispositivos de baja energía que funcionan en la banda de 2.4Ghz. Su funcionamiento requiere de emparejamiento de los dispositivos, pero una vez hecho la conexión será automática.
+## Control de led mediante ESP-NOW (Esclavo)
+El funcionamiento del código de un ESP32 configurado como dispositivo esclavo utilizando el protocolo de comunicación ESP-NOW. Este ESP32 recibe datos desde un ESP32 maestro y, en función de los valores recibidos, controla el estado de un LED.
 
-## ESP32 soporta las siguientes características:
-```
-Comunicación unicast encriptada y sin encriptar
-Se pueden mezclar clientes con encriptación y sin encriptación
-Permite enviar hasta 250-bytes de carga útil
-Se pueden configurar callbacks para informar a la aplicación si la transmisión fue correcta
-Largo alcance, pudiendo superar los 200m en campo abierto.
-```
-## Pero también tiene sus limitaciones, las cuales son:
-```
-El número de clientes con encriptación está limitado. Esta limitación es de 10 clientes para el modo Estación, 6 como mucho en modo punto de acceso o modo mixto.
-El número total de clientes con y sin encriptación sin encriptación es del 20.
-Sólo se pueden enviar 250 bytes como mucho.
-En palabras simples, ESP-Now es un protocolo de comunicación que nos permitirá intercambiar pequeños mensajes (hasta 250 bytes), entre nuestros microcontroladores ESP. 
-Este protocolo es muy versátil y nos permitirá realizar conexiones en una dirección o en ambas direcciones, en diferentes configuraciones.
- ```
-## Tipos de comunicación
- ```
-Comunicación ESP-Now en una dirección
-Este tipo de comunicación se compone de uno o varios dispositivos ESP que funcionarán como maestros y esclavos. 
-La comunicación la iniciará el dispositivo o dispositivos maestros, y será recibida por el o los esclavos. 
-Entre las diferentes configuraciones de las que disponemos para la configuración en una dirección, podemos distinguir las siguientes:
-  ```
-## Un maestro y un esclavo
-## Un maestro y varios esclavos
-## Varios maestros y un esclavo
 
+### Explicación del Funcionamiento
+
+Fase de configuración:
+
+- Se inicializa ESP-NOW y el puerto serie.
+
+- Se configura el dispositivo como esclavo y se registra la función de recepción de datos.
+
+- Se define el pin del LED como salida.
+
+Fase de ejecución:
+
+- El ESP32 permanece en espera hasta recibir datos.
+
+- Cuando llega un mensaje, se extrae la información del potenciometro.
+
+- Si el valor es mayor a 512, el LED se enciende; de lo contrario, se apaga.
+
+### Descripción del Código
+
+1. Inclusión de librerías: Se incluyen las librerías WiFi.h y esp_now.h para manejar la comunicación ESP-NOW.
+
+2. Definición de la estructura de datos: Se define una estructura ESTRUCTURA_DATOS que contiene dos variables:
+
+- potenciometro: Valor analógico recibido del maestro (0 - 1023).
+
+- tiempo: Marca de tiempo en milisegundos.
+
+### Inicialización del ESP-NOW:
+
+- Se inicializa la comunicación ESP-NOW.
+
+- Se establece el ESP32 en modo esclavo (ESP_NOW_ROLE_SLAVE).
+
+- Se registra una función de callback (recibirDatos) que se ejecuta al recibir datos.
+
+>**Codigo para su consulta**
+   >
+   >- **[Codigo Esclavo_EspNow](Esclavo_EspNow.ino)**
+   ---------------
+
+## Recepción de Datos con ESP-NOW (Esclavo)
+
+
+Este documento describe el funcionamiento del código de un ESP32 configurado como dispositivo esclavo utilizando el protocolo de comunicación ESP-NOW. Este ESP32 recibe datos desde un ESP32 maestro y los procesa para su visualización en el monitor serie.
+
+### Descripción del Código
+
+1. Inclusión de librerías: Se incluyen las librerías WiFi.h y esp_now.h para manejar la comunicación ESP-NOW.
+
+2. Definición de la estructura de datos: Se define una estructura struct_message que contiene cinco variables:
+
+- a: Cadena de caracteres de 32 bytes.
+
+- b: Entero.
+
+- c: Flotante.
+
+- d: Cadena de texto String.
+
+- e: Booleano.
+
+3. Inicialización del ESP-NOW:
+
+- Se inicializa la comunicación ESP-NOW.
+
+- Se configura el ESP32 en modo WIFI_STA.
+
+- Se registra una función de callback (OnDataRecv) que se ejecuta al recibir datos.
+
+4. Recepción y procesamiento de datos:
+
+- Se recibe la dirección MAC del maestro y los datos enviados.
+
+- Se imprime en el monitor serie la información recibida.
+
+- Se realizan operaciones sobre los datos:
+
+- Se incrementa en 1 el valor del entero b.
+
+- Se suma 0.22 al valor flotante c.
+
+>**Codigo para su consulta**
+   >
+   >- **[Codigo EspNow_Slave_01](EspNow_Slave_01.ino)**
+   --------------
+
+   ## Envío de Datos con ESP-NOW (Maestro)
+
+   El funcionamiento del código de un ESP32 configurado como dispositivo maestro utilizando el protocolo de comunicación ESP-NOW. Este ESP32 envía datos estructurados a un ESP32 esclavo.
+
+### Descripción del Código
+
+1. Inclusión de librerías: Se incluyen las librerías WiFi.h y esp_now.h para manejar la comunicación ESP-NOW.
+
+2. Definición de la estructura de datos: Se define una estructura struct_message que contiene cinco variables:
+
+- a: Cadena de caracteres de 32 bytes.
+
+- b: Entero.
+
+- c: Flotante.
+
+- d: Cadena de texto String.
+
+- e: Booleano.
+
+### Inicialización del ESP-NOW:
+
+- Se inicializa la comunicación ESP-NOW.
+
+- Se configura el ESP32 en modo WIFI_STA.
+
+- Se registra una función de callback (OnDataSent) que se ejecuta tras enviar datos.
+
+- Se agrega el receptor como un peer para la comunicación.
+
+## Envío de datos:
+- Se asignan valores a la estructura myData.
+
+- Se envía la estructura utilizando esp_now_send().
+
+- Se imprime en el monitor serie el estado del envío.
+
+>**Codigo para su consulta**
+   >
+   >- **[Codigo Maestro_EspNow](Maestro_EspNow.ino)**
+   --------------
+
+   ### Herramientas visulaes
+
+   ESP-NOW with ESP32 EXPLAINED: Easiest Wireless Communication Between Boards (ESP8266 Compatible)
+https://www.youtube.com/watch?v=qxwXwNS3Avw
+
+Protocolo de comunicación ESP-NOW (tarjeta ESP32).
+https://www.youtube.com/watch?v=sX9pH0OYbKg
+
+Getting Started with ESP-NOW (ESP8266 NodeMCU with Arduino IDE)
+https://randomnerdtutorials.com/esp-now-esp8266-nodemcu-arduino-ide/
+
+ESP-NOW Two-Way Communication Between ESP32 Boards
+https://randomnerdtutorials.com/esp-now-two-way-communication-esp32/
+
+Que es ESP-NOW?
+https://www.electrosoftcloud.com/esp-now-conecta-dos-o-mas-esp32-esp8266/
