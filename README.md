@@ -6,11 +6,11 @@ Este repositorio contiene una recopilación de proyectos desarrollados a lo larg
 
 ## 📌 Índice
 
-- [Oracle Cloud]
-- [Bases de Datos]
-- [Actividades con ESP32]
-- [Actividades de PHP]
-- [Github]
+- Oracle Cloud
+- Bases de Datos
+- Actividades con ESP32
+- Actividades de PHP
+- Github
 
 
 ---
