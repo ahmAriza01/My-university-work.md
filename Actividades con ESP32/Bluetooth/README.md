@@ -55,8 +55,39 @@ Este proyecto permite controlar dos LEDs conectados a los pines GPIO 2 y GPIO 14
 "3" enciende el LED en el pin GPIO 14.
 "4" apaga el LED en el pin GPIO 14.
 
+>**Codigo para su consulta**
+   >
+   >- **[Codigo 4](BT4.ino)**
+----------------------
+### 5. B5 - Control de LED mediante Mensajes de Texto
+Este proyecto permite controlar un LED conectado al pin GPIO 2 del ESP32 mediante mensajes recibidos a través de Bluetooth. El mensaje "led_on" enciende el LED, y "led_off" lo apaga.
+
+#### Descripción
+- **Objetivo:** Controlar un LED mediante mensajes de texto enviados desde un dispositivo Bluetooth.
+
+- **Funcionalidad:** El dispositivo Bluetooth envía mensajes:
+"led_on" enciende el LED.
+"led_off" apaga el LED.
+
+>**Codigo para su consulta**
+   >
+   >- **[Codigo B5](BT5.ino)**
 
 ------------------------------
+### 6. B6 - Control de LED con Comandos Simples
+Este proyecto permite encender y apagar un LED conectado al pin GPIO 2 del ESP32 mediante comandos enviados por Bluetooth. Se utilizan los caracteres 'A' y 'B' para encender y apagar el LED, respectivamente.
+
+#### Descripción
+- **Objetivo:** Controlar un LED utilizando caracteres de control enviados a través de Bluetooth.
+
+- **Funcionalidad:** El dispositivo Bluetooth envía los siguientes comandos:
+'A' enciende el LED.
+'B' apaga el LED.
+
+>**Codigo para su consulta**
+   >
+   >- **[Codigo B6](BT6.ino)**
+---------------------
 ## Requisitos Generales
 - **Hardware:** ESP32.
 
