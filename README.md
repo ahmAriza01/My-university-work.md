@@ -18,7 +18,7 @@ Este repositorio contiene una recopilación de proyectos desarrollados a lo larg
 
 ## 🌐 Oracle Cloud
 
-- **[Proyectos en Oracle Cloud](https://github.com/Akeno075/Proyectos-Clases/tree/main/Oracle%20Cloud)**: Configuración y administración de servicios en la nube, despliegue de bases de datos y aplicaciones.
+- **[Proyectos en Oracle Cloud](https://github.com/Akeno075/Proyectos-Clases/tree/main/Oracle%20Cloud)**: Configuración y administración de servicios en la nube, despliegue de bases de datos y aplicaciones..
 
 ## 🗄️ Bases de Datos
 
