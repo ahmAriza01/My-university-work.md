@@ -61,4 +61,4 @@ No se ejecuta debido a que la ESP32 entra en Deep Sleep.
 
 >**Codigo para su consulta**
    >
-   >- **[Codigo Deep Sleep](./.ino)**
+   >- **[Codigo Deep Sleep](TimerWakeUp_Dormir.ino)**
