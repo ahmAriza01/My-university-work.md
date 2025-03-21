@@ -33,4 +33,4 @@ Este repositorio contiene una recopilación de proyectos desarrollados a lo larg
 
 ## 📜 Licencia
 
-Este repositorio se encuentra bajo la licencia MIT. Puedes usar, modificar y distribuir el código con libertad, siempre y cuando se incluya la atribución correspondiente.
+Este repositorio se encuentra bajo la licencia. Puedes usar, modificar y distribuir el código con libertad, siempre y cuando se incluya la atribución correspondiente.
