@@ -56,3 +56,9 @@ Determina la razón por la cual la ESP32 se despertó e imprime un mensaje en el
 4. Función loop()
 
 No se ejecuta debido a que la ESP32 entra en Deep Sleep.
+ 
+----------
+
+>**Codigo para su consulta**
+   >
+   >- **[Codigo Deep Sleep](./.ino)**
