@@ -1,6 +1,7 @@
 ## 🔌 Actividades con ESP32
 
-Texto descriptibo acerca de lo que se realizaron
+Este apartado incluye diversas actividades realizadas con la ESP32, enfocadas en la comunicación inalámbrica, el bajo consumo de energía y transmisión de datos. Se trabajó con diferentes protocolos y métodos para optimizar el rendimiento del microcontrolador (ESP32).
+
 
 ---
 
