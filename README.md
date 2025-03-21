@@ -9,8 +9,8 @@ Este repositorio contiene una recopilación de proyectos desarrollados a lo larg
 - [Oracle Cloud](https://github.com/Akeno075/Proyectos-Clases/tree/main/Oracle%20Cloud)
 - [Bases de Datos](https://github.com/Akeno075/Proyectos-Clases/tree/main/Base%20de%20Datos)
 - [Actividades con ESP32](https://github.com/Akeno075/Proyectos-Clases/tree/main/Actividades%20con%20ESP32)
-- [Actividades de PHP](#https://github.com/Akeno075/Proyectos-Clases/tree/main/Actividades%20de%20PHP)
-- [Github](#https://github.com/Akeno075)
+- [Actividades de PHP](https://github.com/Akeno075/Proyectos-Clases/tree/main/Actividades%20de%20PHP)
+- [Github](https://github.com/Akeno075)
 
 
 ---
