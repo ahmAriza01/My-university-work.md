@@ -192,6 +192,159 @@ Este archivo recibe datos en formato JSON a través de una solicitud POST, los p
 
 
 -----
+# 📌 Proyecto Dientes (Bluetooth)
+
+Este proyecto implementa un sistema para enviar datos desde un ESP32 a un servidor PHP utilizando Bluetooth Serial. Una vez recibidos los datos por Bluetooth, estos se envían a una base de datos MySQL a través de una API en PHP mediante una conexión WiFi.
+
+### 📖 Tecnologías Utilizadas
+
+- ESP32 (Placa de desarrollo)
+
+- Bluetooth Serial (Para recibir datos de un dispositivo móvil u otro ESP32)
+
+- WiFi (Para enviar datos a un servidor web)
+
+- PHP (Para recibir y almacenar datos en una base de datos MySQL)
+
+- MySQL (Para gestionar la base de datos)
+
+- Arduino IDE (Para programar el ESP32)
+---
+
+#### 📁  Estructura del Proyecto
+- 📄 db_config.php          # Configuración de la base de datos
+- 📄 recibir_datos.php      # API que recibe los datos y los almacena en la BD
+-  📄 ESP32_Bluetooth.ino    # Código del ESP32 para recibir datos y enviarlos
+---
+
+### 🚀 Archivos del Proyecto
+##### 📌 `db_config.php` - Configuración de la Conexión a la Base de Datos
+Este archivo define la conexión entre PHP y MySQL
+
+    <?php
+    $servername = "pagina web";
+    $username = "nombre de usuario";
+    $password = "contraseña";
+    $dbname = "nombre de la base de datos";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Conexión fallida: " . $conn->connect_error);
+    }
+    ?>
+
+
+##### 📌`recibir_datos.php` - API para Recibir Datos y Guardarlos
+Este archivo recibe los datos en JSON mediante una solicitud POST y los almacena en la base de datos.
+
+    <?php
+    include 'db_config.php';
+
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $datos = json_decode(file_get_contents('php://input'));
+
+        if (isset($datos->sensor) && isset($datos->valor)) {
+            $sensor = $conn->real_escape_string($datos->sensor);
+            $valor = $conn->real_escape_string($datos->valor);
+
+            $sql = "INSERT INTO registro (sensor, valor) VALUES ('$sensor', '$valor')";
+
+            if ($conn->query($sql) === TRUE) {
+                echo json_encode(["mensaje" => "Datos registrados correctamente"]);
+            } else {
+                echo json_encode(["error" => "Error al insertar: " . $conn->error]);
+            }
+        } else {
+            echo json_encode(["error" => "Datos incompletos"]);
+        }
+    }
+
+    $conn->close();
+    ?>
+----
+
+### ⚡ Código del ESP32 con Bluetooth
+Este código permite recibir datos desde Bluetooth Serial, procesarlos y enviarlos al servidor PHP.
+
+    #include <WiFi.h>
+    #include <HTTPClient.h>
+    #include "DHT.h"
+    #include "BluetoothSerial.h"
+
+    #define DHTPIN 4      
+    #define DHTTYPE DHT11 
+
+    const char* ssid = "Nombre de la red";
+    const char* password = "Contraseña de la red";
+    const char* serverName = "Direccion de la pagina web";
+
+    DHT dht(DHTPIN, DHTTYPE);
+    BluetoothSerial SerialBT;
+
+    void setup() {
+        Serial.begin(115200);
+        SerialBT.begin("ESP32_Bluetooth"); // Inicia Bluetooth con el nombre ESP32_Bluetooth
+        WiFi.begin(ssid, password);
+
+        Serial.println("Conectando a WiFi...");
+        int intentos = 0;
+        while (WiFi.status() != WL_CONNECTED && intentos < 20) {
+            delay(500);
+            Serial.print(".");
+            intentos++;
+        }
+
+        if (WiFi.status() == WL_CONNECTED) {
+            Serial.println("\nConectado a WiFi");
+            Serial.print("Dirección IP: ");
+            Serial.println(WiFi.localIP());
+        } else {
+            Serial.println("\nNo se pudo conectar a WiFi. Revisa SSID/contraseña.");
+        }
+        
+        dht.begin();
+    }
+
+    void loop() {
+        float temperatura = dht.readTemperature(); 
+
+        if (isnan(temperatura)) {
+            Serial.println("Error al leer el sensor DHT11");
+        } else {
+            Serial.print("Sensor: DHT11, Valor: ");
+            Serial.print(temperatura);
+            Serial.println("°C");
+
+            SerialBT.print("Sensor: DHT11, Valor: ");
+            SerialBT.println(temperatura); // Enviar datos por Bluetooth
+
+            if (WiFi.status() == WL_CONNECTED) {
+                HTTPClient http;
+                http.begin(serverName);
+                http.addHeader("Content-Type", "application/json");
+
+                String jsonPayload = "{\"sensor\":\"DHT11\",\"valor\":\"" + String(temperatura) + "\"}";
+                int httpResponseCode = http.POST(jsonPayload);
+
+                if (httpResponseCode > 0) {
+                    Serial.print("Respuesta del servidor: ");
+                    Serial.println(http.getString());
+                } else {
+                    Serial.print("Error en la solicitud HTTP: ");
+                    Serial.println(httpResponseCode);
+                }
+                http.end();
+            } else {
+                Serial.println("WiFi desconectado, no se pudo enviar datos.");
+            }
+        }
+
+        delay(180000); // Esperar 3 minutos antes de la siguiente lectura
+    }
+
+---
+
 
 ## 🛠 Cómo Ejecutar el Proyecto
 
