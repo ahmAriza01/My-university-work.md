@@ -14,7 +14,7 @@
 4. Verifica tu correo electrónico y confirma tu cuenta.
 5. Accede al **Panel de Oracle Cloud** para gestionar tus servicios.
 
-![Formulario inicio]({FB486F1D-2050-4665-AD8D-0CF02FF58905}.png)
+![Formulario inicio](./imgs/creatorin.png)
 
 ## Creacion de una instancia en Oracle Cloud
 
