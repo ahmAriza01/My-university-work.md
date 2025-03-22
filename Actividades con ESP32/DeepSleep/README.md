@@ -22,20 +22,20 @@ La ESP32 entrará en modo de suspensión profunda durante un tiempo determinado 
 
 1. Definición de Variables y Constantes
 
-- uS_TO_S_FACTOR: Factor de conversión de microsegundos a segundos.
+- `uS_TO_S_FACTOR`: Factor de conversión de microsegundos a segundos.
 
-- TIME_TO_SLEEP: Tiempo que la ESP32 dormirá antes de despertarse.
+- `TIME_TO_SLEEP`: Tiempo que la ESP32 dormirá antes de despertarse.
 
-- RTC_DATA_ATTR int bootCount: Variable almacenada en la memoria RTC para contar los reinicios.
+- `RTC_DATA_ATTR int bootCount`: Variable almacenada en la memoria RTC para contar los reinicios.
 
-- RTC_DATA_ATTR int Covid: Variable que decrece en cada reinicio.
+- `RTC_DATA_ATTR int Covid`: Variable que decrece en cada reinicio.
 
 
-2. Función print_wakeup_reason()
+2. Función `print_wakeup_reason()`
 
 Determina la razón por la cual la ESP32 se despertó e imprime un mensaje en el monitor serie.
 
-3. Función setup()
+3. Función `setup()`
 
 1. Inicializa la comunicación serie.
 
@@ -49,11 +49,9 @@ Determina la razón por la cual la ESP32 se despertó e imprime un mensaje en el
 4. Configura el temporizador como fuente de activación para el Deep Sleep.
 
 
-5. Inicia el modo de suspensión profunda con esp_deep_sleep_start().
+5. Inicia el modo de suspensión profunda con `esp_deep_sleep_start()`.
 
-
-
-4. Función loop()
+4. Función `loop()`
 
 No se ejecuta debido a que la ESP32 entra en Deep Sleep.
  
