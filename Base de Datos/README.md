@@ -151,6 +151,10 @@ Para ver que nuestra pagina funciona correctamente colocamos dos index diferente
 - Index de shop
 ![shopxt](shop.png)
 
+
+---
+
+### HTTP a HTPPS mayor seguridad
 ---
 
 
