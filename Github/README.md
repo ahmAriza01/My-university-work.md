@@ -131,4 +131,7 @@ GitHub generará un enlace donde podrás acceder a tu sitio web. La URL será al
 
 [Portafolio de proyectos](https://akeno075.github.io) : En este repositorio se creo un portafolio en donde se subiran los trabajos y creaciones para vista del publico interesado en los temas de prgramacion, microcontroladores y temas de redes y telecomunicaciones.
 
+-----
+##### 💡 Autor: [Juan Pablo Gonzalez Gasca]
+##### 📆 Última actualización: [28/Marzo/2025]
 

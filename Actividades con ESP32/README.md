@@ -15,3 +15,7 @@ Este apartado incluye diversas actividades realizadas con la ESP32, enfocadas en
 - **[WiFi](./WiFi/README.md)**: Conexión a redes WiFi para enviar y recibir datos en aplicaciones IoT.
 
 - **[ESP-NOW](./ESPNOW/Readme.md)**: Comunicación de baja latencia entre múltiples ESP32 sin necesidad de un router.
+
+-----
+##### 💡 Autor: [Juan Pablo Gonzalez Gasca]
+##### 📆 Última actualización: [28/Marzo/2025]
