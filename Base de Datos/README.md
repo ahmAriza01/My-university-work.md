@@ -157,6 +157,43 @@ Para ver que nuestra pagina funciona correctamente colocamos dos index diferente
 ### HTTP a HTPPS mayor seguridad
 ---
 
+#### ✅ Requisitos previos
+- Un dominio registrado (Ejemplo: midominio.com).
+
+- Un VPS con HestiaCP ya instalado.
+
+- Acceso a la terminal SSH como root.
+
+- El dominio apuntando al servidor mediante DNS.
+
+
+##### Pasos para Configurar HTTPS en HestiaCP
+
+##### 1️⃣ Acceder a HestiaCP
+Ve a https://<"IP">:8083/ e inicia sesión como admin.
+
+##### 2️⃣ Agregar un Dominio a HestiaCP
+1. En el panel de control, ve a Web > Añadir dominio.
+
+2. Escribe tu dominio (Ejemplo: midominio.com).
+
+3. Marca la opción Habilitar Soporte SSL.
+
+4. Marca la opción Usar Let’s Encrypt.
+
+5. Haz clic en Guardar.
+
+##### 3️⃣ Configurar el Certificado SSL Manualmente (Opcional)
+Si la opción Let’s Encrypt no funciona automáticamente, puedes activarlo por SSH con los siguientes comandos:
+
+    v-add-web-domain-ssl "usuario de hestia" midominio.com
+    v-add-letsencrypt-domain "usuario de hestia" midominio.com
+
+##### Comprobante de pagina usando HTTPS
+
+![HTTPS](HTTPS.png)
+
+----
 
 ##### 💡 Autor: [Juan Pablo Gonzalez Gasca]
 ##### 📆 Última actualización: [28/Marzo/2025]
