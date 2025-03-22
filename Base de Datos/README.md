@@ -18,22 +18,35 @@ Si ya te has registrado exitosamente en Oracle Cloud como estudiante, puedes omi
 
 
 ### 📌 Hestia Control Panel
-Para configurar tu nombre de dominio (`luisreylara.tech`) en **Hestia**, ejecuta los siguientes comandos como `root`:
+
+#### Opciones que se deben activar
+![HestianConfigt](image.png)
+
+Para configurar tu nombre de dominio (`luisreylara.tech`) en **Hestia**, ejecuta los siguientes comandos como `root` estos nos lo proporciona estiea al momento de colocar las opciones necesarias:
 ```sh
 cd /usr/local/hestia/bin/
 v-change-sys-hostname luisreylara.tech
 v-add-letsencrypt-host
 ```
 
+
+
 ### 📌 Hostinger
 1. **Realizar el pago**.
 2. **Cambiar el nombre del dominio**.
 
+- Para mas informacion referente a los pasos que se siguen en la cracion del Hostinger: 
+https://www.youtube.com/playlist?list=PL-aSvPEYgSGij1bg9HvlLZAJahMNGunX7
+
 ### 📌 Instalar Apache y PHP en una instancia de Ubuntu
 (Pendiente de configuración adicional).
+ 
+ 1. Instalar en la intancia preparada por Ubuntu.
+
+ [Instalacion Apache y PHP ](https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/apache-on-ubuntu/01oci-ubuntu-apache-summary.htm)
 
 ### 📌 DNS Propagator Checker
-Herramienta para verificar la propagación de DNS.
+[Herramienta para verificar la propagación de DNS.](https://www.whatsmydns.net)
 
 ### 📌 PHP
 Para comprobar la creación de **phpMyAdmin**, ejecuta:
