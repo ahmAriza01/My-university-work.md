@@ -1,15 +1,5 @@
-# 🚀 Guía para Crear una Cuenta en Oracle Cloud y Configuración de Servidores
+# 🚀 Configuración de Servidores, adaptacion del entorno y herramientas para los VPS
 
----
-
-## 📖 Creación de Cuenta en Oracle Cloud
-Si ya te has registrado exitosamente en Oracle Cloud como estudiante, puedes omitir esta sección.
-
-1. Ve a [Oracle Cloud](https://www.oracle.com/cloud/).
-2. Haz clic en **Empieza Gratis** y selecciona la opción de registro para estudiantes, si es el caso.
-3. Completa el formulario de inscripción con tus datos personales.
-4. Verifica tu correo electrónico y confirma tu cuenta.
-5. Accede al **Panel de Oracle Cloud** para gestionar tus servicios.
 
 ---
 
