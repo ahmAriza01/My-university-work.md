@@ -346,7 +346,7 @@ Este código permite recibir datos desde Bluetooth Serial, procesarlos y enviarl
 ---
 
 
-## 🛠 Cómo Ejecutar el Proyecto
+## 🛠 Cómo Ejecutar los Proyecto
 
 #### 1️⃣ Subir los Archivos a un Servidor
 - Puedes usar XAMPP, MAMP o un servidor web que soporte PHP y MySQL en este caso con el que adquirimos y de este mismo ejecutamos las pticiones con los datos directamente.
@@ -357,12 +357,28 @@ Este código permite recibir datos desde Bluetooth Serial, procesarlos y enviarl
 
 https://bjpgg.site/tablas.php
 
-
+---
 
 ### 📖 Recursos Adicionales
 - 🔗 Guía Oficial de PHP y MySQL
 - 🔗 XAMPP - Servidor Local
 - 🔗 GitHub Pages
+
+---
+### Codigos usados.
+
+- [Proyecto Tabla Registro](./Guarde%20en%20la%20tabla%20registro/datospost%20(1).php)
+
+- [Proyecto Registro de Sensores (Insertar)](./Registro/insertar.php)
+
+- [Proyecto Registro de Sensores (Tablas)](./Registro/tablas.php)
+
+- [Proyecto Diente (PHP) ](./Proyecto%20Dientes/dientesdatos%20(1).php)
+
+- [Proyecto Diente (INO)](./Proyecto%20Dientes/mandadodedatos.ino)
+
+
+
 -----
 ##### 💡 Autor: [Juan Pablo Gonzalez Gasca]
 ##### 📆 Última actualización: [28/Marzo/2025]
