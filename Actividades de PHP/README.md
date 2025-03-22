@@ -112,6 +112,87 @@ Este script obtiene y muestra los datos almacenados en la base de datos.
 
 ----
 
+# 📌 Proyecto Registro de Sensores
+
+Este proyecto consiste en una API creada con PHP que recibe datos en formato **JSON** y los almacena en una base de datos MySQL. Es ideal para integrar con sistemas IoT o cualquier aplicación que requiera el almacenamiento de datos de sensores en tiempo real.
+
+## 🛠 Configuración de la Base de Datos
+
+Antes de ejecutar el proyecto, asegúrate de configurar correctamente la base de datos.
+
+### 1️⃣ Crear la Base de Datos y la Tabla
+
+Ejecuta el siguiente comando SQL en **phpMyAdmin** o en la consola de MySQL:
+
+    
+    CREATE DATABASE admin_romerillo;
+
+    USE admin_romerillo;
+
+    CREATE TABLE registro (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        sensor VARCHAR(50) NOT NULL,
+        fecha_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        valor FLOAT NOT NULL
+    );
+    
+--- 
+## 🚀 Archivos del Proyecto
+
+### 1️⃣ `db_config.php` - Configuración de la Conexión a la Base de Datos
+
+Este archivo se usa para conectar PHP con MySQL.
+
+        <?php
+        $servername = "pagina web";
+        $username = "nombre de acceso";
+        $password = "contraseña";
+        $dbname = "nombre de la base de datos";
+
+        // Crear conexión
+        $conn = new mysqli($servername, $username, $password, $dbname);
+
+        // Verificar conexión
+        if ($conn->connect_error) {
+            die("Conexión fallida: " . $conn->connect_error);
+        }
+        ?>
+
+### 2️⃣ `recibir_datos.php` - Recibir Datos y Guardarlos
+Este archivo recibe datos en formato JSON a través de una solicitud POST, los procesa y los guarda en la base de datos.
+
+    <?php
+    include 'db_config.php';
+
+    // Verificar si la solicitud es POST
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        // Obtener los datos JSON recibidos
+        $datos = json_decode(file_get_contents('php://input'));
+
+        if (isset($datos->sensor) && isset($datos->valor)) {
+            $sensor = $conn->real_escape_string($datos->sensor);
+            $valor = $conn->real_escape_string($datos->valor);
+
+            // Insertar datos en la base de datos
+            $sql = "INSERT INTO registro (sensor, valor) VALUES ('$sensor', '$valor')";
+
+            if ($conn->query($sql) === TRUE) {
+                echo json_encode(["mensaje" => "Nuevo registro creado exitosamente"]);
+            } else {
+                echo json_encode(["error" => "Error al insertar: " . $conn->error]);
+            }
+        } else {
+            echo json_encode(["error" => "Datos incompletos"]);
+        }
+    }
+
+    // Cerrar conexión
+    $conn->close();
+    ?>
+
+
+-----
+
 ## 🛠 Cómo Ejecutar el Proyecto
 
 #### 1️⃣ Subir los Archivos a un Servidor
@@ -123,10 +204,7 @@ Este script obtiene y muestra los datos almacenados en la base de datos.
 
 https://bjpgg.site/tablas.php
 
-----
-CONTINUACION
 
------
 
 ### 📖 Recursos Adicionales
 - 🔗 Guía Oficial de PHP y MySQL
