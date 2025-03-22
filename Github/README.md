@@ -23,12 +23,20 @@ Sigue estos pasos para crear un repositorio en GitHub:
 2. **Crear repositorio**:
    - En la parte superior derecha, haz clic en el icono de tu perfil y selecciona **"Your repositories"**.
    - Haz clic en **"New"** para crear un nuevo repositorio.
+
+   ![creator-new](./imgs/createnew.png)
+
 3. **Configura el repositorio**:
    - **Nombre del repositorio**: Elige un nombre para tu repositorio.
    - **Descripción (opcional)**: Escribe una breve descripción de lo que contiene tu repositorio.
    - **Visibilidad**: Puedes seleccionar entre **"Public"** (público) o **"Private"** (privado).
    - **Inicializar el repositorio**: Puedes seleccionar **"Initialize this repository with a README"** si deseas agregar un archivo README automáticamente.
+
+![Repositorio](./imgs/reapositoriocreate.png)
+
 4. **Crear repositorio**: Haz clic en **"Create repository"**.
+
+![Create](./imgs/image.png)
 
 ### Desde la Web
 
@@ -127,11 +135,10 @@ GitHub generará un enlace donde podrás acceder a tu sitio web. La URL será al
 
 ---------
 
-## Paginna creada para Portafolio de proyectos.
+## Pagina creada para Portafolio de proyectos.
 
 [Portafolio de proyectos](https://akeno075.github.io) : En este repositorio se creo un portafolio en donde se subiran los trabajos y creaciones para vista del publico interesado en los temas de prgramacion, microcontroladores y temas de redes y telecomunicaciones.
 
------
 ##### 💡 Autor: [Juan Pablo Gonzalez Gasca]
 ##### 📆 Última actualización: [28/Marzo/2025]
 
