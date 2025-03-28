@@ -1,14 +1,14 @@
-# 🌐 Oracle Cloud
+# Oracle Cloud
 
 ---
 
-## 🚀 Guía para Crear una Cuenta en Oracle Cloud y Desplegar una Instancia
+##  Guía para Crear una Cuenta en Oracle Cloud y Desplegar una Instancia
 
 Esta guía te mostrará paso a paso cómo crear una cuenta en Oracle Cloud y desplegar tu primera instancia virtual.
 
 ---
 
-## 📝 Registro en Oracle Cloud
+##  Registro en Oracle Cloud
 
 1. Accede al sitio oficial: [Oracle Cloud](https://www.oracle.com/cloud/).
 2. Haz clic en **"Empieza Gratis"** o selecciona la opción de **registro para estudiantes**.
@@ -20,9 +20,9 @@ Esta guía te mostrará paso a paso cómo crear una cuenta en Oracle Cloud y des
 
 ---
 
-## 🖥️ Creación de una Instancia Virtual
+##  Creación de una Instancia Virtual
 
-### 🔐 Inicio de Sesión
+###  Inicio de Sesión
 
 1. Inicia sesión en Oracle Cloud utilizando tu nombre de cliente en la nube (Cloud Account Name).
 
@@ -34,7 +34,7 @@ Esta guía te mostrará paso a paso cómo crear una cuenta en Oracle Cloud y des
 
 ---
 
-## 📂 Paso 1: Iniciar la Creación de la Instancia
+##  Paso 1: Iniciar la Creación de la Instancia
 
 1. Desde el menú lateral, navega a **Compute** → **Recursos informáticos**.
 2. Selecciona la opción **Instancias**.
@@ -46,7 +46,7 @@ Esta guía te mostrará paso a paso cómo crear una cuenta en Oracle Cloud y des
 
 ---
 
-## ⚙️ Paso 2: Configurar la Instancia
+##  Paso 2: Configurar la Instancia
 
 - **Nombre de la instancia**: Asigna un nombre identificativo (ej. `mi-servidor`).
 
@@ -70,30 +70,31 @@ Esta guía te mostrará paso a paso cómo crear una cuenta en Oracle Cloud y des
 
 ---
 
-## 🔑 Paso 3: Configurar Claves SSH
+##  Paso 3: Configurar Claves SSH
 
 1. Genera un par de claves SSH desde tu terminal:
 
    ```bash
    ssh-keygen -t rsa -b 4096 -f ~/.ssh/oracle_key
 
+
 2. Sube la clave pública o utiliza la opción para generarla automáticamente desde Oracle Cloud.
    ![Clave ssh](ssh.png)
 
 ---
 
-## ✅ Confirmar y Crear la Instancia Una vez completada la configuración, haz clic en Crear. El proceso de creación tomará menos de un minuto.
+##  Confirmar y Crear la Instancia Una vez completada la configuración, haz clic en Crear. El proceso de creación tomará menos de un minuto.
    ![instancia](create.png)
    ![instancia proceso ](insta.png)
 
 ---
-## 🛠️ Configuración Posterior
+##  Configuración Posterior
 Una vez creada la instancia, puedes acceder vía SSH desde tu terminal usando la clave generada.
 Desde aquí, ya puedes instalar los servicios necesarios como Apache, PHP, entre otros, según el propósito de tu proyecto.
 
    ![conf posterior ](caso.png)
 
-## 👨‍💻 Autor
+##  Autor
 
 **[Abraham Isai Lara Ariza](https://github.com/ahmAriza01)**  
 📧 *323030060@upjr.edu.mx*  
