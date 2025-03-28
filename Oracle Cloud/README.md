@@ -77,6 +77,22 @@ Esta guía te mostrará paso a paso cómo crear una cuenta en Oracle Cloud y des
    ```bash
    ssh-keygen -t rsa -b 4096 -f ~/.ssh/oracle_key
 
+2. Sube la clave pública o utiliza la opción para generarla automáticamente desde Oracle Cloud.
+   ![Clave ssh](ssh.png)
+
+---
+
+## ✅ Confirmar y Crear la Instancia Una vez completada la configuración, haz clic en Crear. El proceso de creación tomará menos de un minuto.
+   ![instancia](create.png)
+   ![instancia proceso ](insta.png)
+
+---
+## 🛠️ Configuración Posterior
+Una vez creada la instancia, puedes acceder vía SSH desde tu terminal usando la clave generada.
+Desde aquí, ya puedes instalar los servicios necesarios como Apache, PHP, entre otros, según el propósito de tu proyecto.
+
+   ![conf posterior ](caso.png)
+
 ## 👨‍💻 Autor
 
 **[Abraham Isai Lara Ariza](https://github.com/ahmAriza01)**  
