@@ -80,5 +80,5 @@ Esta guía te mostrará paso a paso cómo crear una cuenta en Oracle Cloud y des
 ## 👨‍💻 Autor
 
 **[Abraham Isai Lara Ariza](https://github.com/ahmAriza01)**  
-📧 *abraham.lara@example.com*  
+📧 *323030060@upjr.edu.mx*  
 📅 *Última actualización: 30 de marzo de 2025*
