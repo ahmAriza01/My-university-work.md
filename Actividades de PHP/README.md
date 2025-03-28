@@ -380,7 +380,11 @@ https://bjpgg.site/tablas.php
 
 
 -----
-##### 💡 Autor: [ABRAHAM ISAI LARA ARIZA]
-##### 📆 Última actualización: [30/Marzo/2025]
+
+## 👨‍💻 Autor
+
+**[Abraham Isai Lara Ariza](https://github.com/ahmAriza01)**  
+📧 *323030060@upjr.edu.mx*  
+📅 *Última actualización: 30 de marzo de 2025*
 
 
