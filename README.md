@@ -1,36 +1,57 @@
 # 📚 Proyectos de Clase
 
-Este repositorio contiene una recopilación de proyectos desarrollados a lo largo de diversos temas. Cada sección corresponde a un tema específico con sus respectivos proyectos y recursos.
+¡Bienvenido! Este repositorio contiene una recopilación de proyectos desarrollados a lo largo de distintos temas vistos en clase. Cada sección incluye proyectos específicos y sus respectivos recursos.
 
 ---
 
 ## 📌 Índice
 
----
+- [🌐 Oracle Cloud](#-oracle-cloud)
+- [🗄️ Bases de Datos](#-bases-de-datos)
+- [🔌 Actividades con ESP32](#-actividades-con-esp32)
+- [📉 Actividades de PHP](#-actividades-de-php)
+- [🔎 GitHub](#-github)
+- [📜 Licencia](#-licencia)
 
+---
 
 ## 🌐 Oracle Cloud
 
-- **[Proyectos en Oracle Cloud](https://github.com/ahmAriza01/ReadMi.md/blob/main/Oracle%20Cloud/README.md)**: Configuración y administración de servicios en la nube y despliegue de bases de datos.
+🔗 **[Ver proyectos en Oracle Cloud](https://github.com/ahmAriza01/ReadMi.md/blob/main/Oracle%20Cloud/README.md)**  
+Configuración y administración de servicios en la nube, así como despliegue de bases de datos.
+
+---
 
 ## 🗄️ Bases de Datos
 
-- **[Proyectos de Bases de Datos](https://github.com/ahmAriza01/ReadMi.md/blob/main/Base%20de%20Datos/README.md)**: Consultas  usando consultas en MySQL por medio de SSH.
+🔗 **[Ver proyectos de Bases de Datos](https://github.com/ahmAriza01/ReadMi.md/blob/main/Base%20de%20Datos/README.md)**  
+Consultas estructuradas usando MySQL a través de conexión SSH.
+
+---
 
 ## 🔌 Actividades con ESP32
 
-- **[Proyectos con ESP32](https://github.com/ahmAriza01/ReadMi.md/blob/main/Actividades%20con%20ESP32/README.md)**: Desarrollo de sistemas embebidos con ESP32, comunicación inalámbrica y Wifi.
+🔗 **[Ver proyectos con ESP32](https://github.com/ahmAriza01/ReadMi.md/blob/main/Actividades%20con%20ESP32/README.md)**  
+Desarrollo de sistemas embebidos con ESP32, incluyendo comunicación inalámbrica y conexión WiFi.
+
+---
 
 ## 📉 Actividades de PHP
 
-- **[Proyectos en PHP](https://github.com/ahmAriza01/ReadMi.md/blob/main/Actividades%20de%20PHP/README.md)**: Creacion de paginas web, conexión con bases de datos y manejo de servidores.
+🔗 **[Ver proyectos en PHP](https://github.com/ahmAriza01/ReadMi.md/blob/main/Actividades%20de%20PHP/README.md)**  
+Creación de páginas web, conexión con bases de datos y gestión de servidores.
 
-## 🔎 Github
+---
 
-- **[Gestión de repositorios](https://github.com/ahmAriza01/ReadMi.md/blob/main/Github/README.md)**: Uso de Git y GitHub para control de versiones, creacion de portafolio de trabajo, colaboración y despliegue de proyectos.
+## 🔎 GitHub
 
+🔗 **[Ver proyectos de GitHub](https://github.com/ahmAriza01/ReadMi.md/blob/main/Github/README.md)**  
+Gestión de repositorios usando Git y GitHub para control de versiones, portafolio de trabajo, colaboración y despliegue de proyectos.
 
+---
 
 ## 📜 Licencia
 
-Este repositorio se encuentra bajo la licencia. Puedes usar, modificar y distribuir el código con libertad, siempre y cuando se incluya la atribución correspondiente.
+Este repositorio se encuentra bajo una licencia libre. Puedes usar, modificar y distribuir el código siempre y cuando se otorgue la atribución correspondiente.
+
+---
