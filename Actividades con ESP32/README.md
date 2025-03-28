@@ -17,7 +17,7 @@ A continuación, encontrarás una lista de los temas cubiertos en relación con 
 - **[WiFi](./WiFi/README.md)**  
   Conexión a **redes WiFi** para la transmisión de datos, proporcionando una forma sencilla de integrar el ESP32 en soluciones de **Internet de las Cosas (IoT)**.
 
-- **[ESP-NOW](./ESPNOW/README.md)**  
+- **[ESP-NOW](./ESPNOW/Readme.md)**  
   **Comunicación de baja latencia** entre múltiples dispositivos ESP32, sin necesidad de un router. Ideal para aplicaciones de red ad-hoc, donde la rapidez de la comunicación es crítica.
 
 ---
