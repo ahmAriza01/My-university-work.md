@@ -90,5 +90,5 @@ En nuestro caso esta seria una vista mas grafica para entender, apartit de aqui 
 ![alt text](caso.png)
 
 -----
-##### 💡 Autor: [Juan Pablo Gonzalez Gasca]
-##### 📆 Última actualización: [28/Marzo/2025]
+##### 💡 Autor: [ABRAHAM ISAI LARA ARIZA]
+##### 📆 Última actualización: [30/Marzo/2025]
