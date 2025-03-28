@@ -63,6 +63,91 @@ Sigue estos pasos para crear un repositorio en GitHub:
    git commit -m "Mi primer commit"
    git push -u origin master
 
+# 📄 Guía para Crear y Publicar una Página Web en GitHub Pages
+## 1️⃣ Crear un Repositorio en GitHub
+1. **Inicia sesión en GitHub**.
+
+2. **Haz clic en el ícono de tu perfil y selecciona "Your repositories"**.
+
+3. **Haz clic en "New" para crear un nuevo repositorio**.
+
+4. **Configura tu repositorio:**
+
+   - **Nombre del repositorio:** Debe ser único y sin espacios, por ejemplo: mi-pagina-web.
+   - **Descripción (opcional):** Agrega una breve descripción del proyecto.
+   - **Visibilidad:** Puedes elegir Público o Privado (si es privado, solo tú podrás verlo).
+   - **Marca la casilla:** "Initialize this repository with a README".
+
+5. Haz clic en "Create repository".
+
+## 2️⃣ Crear los Archivos de tu Página Web Para que GitHub Pages funcione, necesitas al menos un archivo index.html.
+
+1. **En tu repositorio de GitHub, haz clic en "Add file" y selecciona "Create new file".**
+
+2. **Nombra el archivo como index.html.**
+
+3. **Agrega el siguiente código HTML básico:**
+ 
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <h1>¡Hola, mundo!</h1>
+    <p>Esta es mi primera página web publicada con GitHub Pages.</p>
+</body>
+</html>
+```
+
+4. **Desplázate hacia abajo y escribe un mensaje en Commit new file, luego haz clic en "Commit changes".**
+
+---
+
+## 3️⃣ Activar GitHub Pages
+1. **Ve a la sección "Settings" de tu repositorio.**
+
+2. **En el menú lateral izquierdo, selecciona "Pages".**
+
+3. **En la sección "Branch", selecciona main o la rama donde subiste tu código.**
+
+4. **Haz clic en "Save".**
+
+5. **GitHub generará un enlace donde podrás acceder a tu sitio web. La URL será algo como:**
+
+ ```bash
+   https://tu-usuario.github.io/mi-pagina-web/
+ ```
+---
+## 4️⃣ Opcional: Subir Archivos desde la Computadora con Git 
+
+1. **Asegúrate de tener Git instalado. Puedes descargarlo desde git-scm.com.**
+2. **Abre la terminal y navega a la carpeta de tu proyecto:
+
+```bash
+cd ruta/de/tu/proyecto
+```
+3. **Inicializa Git y vincula tu repositorio:**
+   ```bash
+   git init
+   git remote add origin https://github.com/TuUsuario/mi-pagina-web.git
+   ```
+4. **Agrega y sube los archivos:**
+   ```bash
+   git add .
+   git commit -m "Subiendo mi página web"
+   git push -u origin main
+   ```
+---
+
+## 🌐 Página creada para Portafolio de Proyectos
+### 🔗 [🎓 Proyectos Universitarios]([https://github.com/ahmAriza01](https://github.com/ahmAriza01/ReadMi.md/blob/main/README.md))
+
+### **Este repositorio contiene un portafolio donde se subirán los trabajos y creaciones para vista del público interesado en temas de programación, microcontroladores y redes y telecomunicaciones.**
+---
 ## 👨‍💻 Autor
 
 **[Abraham Isai Lara Ariza](https://github.com/ahmAriza01)**  
