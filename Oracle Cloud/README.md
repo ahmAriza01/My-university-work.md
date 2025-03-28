@@ -42,7 +42,7 @@ Esta guía te mostrará paso a paso cómo crear una cuenta en Oracle Cloud y des
 
 ![Menú Instancia](image.png) 
 
-![Crear Instancia](/imgs/image-1.png)
+![Crear Instancia](./imgs/image-1.png)
 
 ---
 
