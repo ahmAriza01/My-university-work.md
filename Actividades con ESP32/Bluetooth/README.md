@@ -1,101 +1,36 @@
-# ESP32 con Bluetooth
-Este repositorio contiene tres proyectos desarrollados con el microcontrolador ESP32, con un enfoque en el uso del Bluetooth para facilitar la comunicación y control de dispositivos. Los proyectos demuestran cómo utilizar la funcionalidad Bluetooth del ESP32 en diferentes aplicaciones.
+# 🔌 Actividades con ESP32
 
---------
+Este apartado documenta las diversas actividades realizadas con el **ESP32**, un microcontrolador de alto rendimiento que permite la comunicación inalámbrica, el bajo consumo de energía y la transmisión de datos. En este proyecto, exploramos varios protocolos y métodos para maximizar el rendimiento y la eficiencia del ESP32 en aplicaciones IoT.
 
-## Proyectos
-### 1. B1 - Bridge entre Bluetooth y Serial (SPP)
-Este proyecto utiliza el perfil Serial Port Protocol (SPP) de Bluetooth para crear un puente entre el puerto serie (USB) y la comunicación Bluetooth. El dispositivo ESP32 actúa como un puerto serial accesible a través de Bluetooth.
+---
 
-#### Descripción
-- **Objetivo:** Crear un puente entre el puerto serie de la computadora y el Bluetooth clásico de ESP32. La comunicación es bidireccional, permitiendo el envío de datos desde el puerto serie a través de Bluetooth y viceversa.
+## 📌 Contenido
 
-- **Funcionalidad:** Permite enviar y recibir datos desde un dispositivo Bluetooth emparejado, facilitando la interacción con cualquier dispositivo compatible con Bluetooth SPP.
+A continuación, encontrarás una lista de los temas cubiertos en relación con el ESP32:
 
->**Codigo para su consulta**
-   >
-   >- **[Codigo B1](BT1.ino)**
----------------------------------------------------------
-### 2. B2 - Control de LED mediante Bluetooth
-Este proyecto utiliza Bluetooth Serial para controlar un LED conectado al pin GPIO 2 del ESP32. El dispositivo puede recibir comandos desde una aplicación Bluetooth y encender o apagar el LED en función del valor recibido.
+- **[Bluetooth](./Bluetooth/README.md)**  
+  Comunicación inalámbrica con dispositivos móviles mediante **Bluetooth**. Este módulo permite interactuar con una amplia gama de dispositivos de manera rápida y eficiente.
 
-#### Descripción
-- **Objetivo:** Controlar un LED (encender/apagar) usando comandos recibidos desde un dispositivo Bluetooth emparejado.
+- **[DeepSleep](./DeepSleep/README.md)**  
+  Implementación de **modos de bajo consumo energético** utilizando la función DeepSleep, que ayuda a prolongar la duración de la batería en aplicaciones donde el consumo energético es crucial.
 
-- **Funcionalidad:** El dispositivo Bluetooth envía un '1' para encender el LED y un '0' para apagarlo. Los comandos son recibidos a través de la conexión Bluetooth serial.
+- **[WiFi](./WiFi/README.md)**  
+  Conexión a **redes WiFi** para la transmisión de datos, proporcionando una forma sencilla de integrar el ESP32 en soluciones de **Internet de las Cosas (IoT)**.
 
->**Codigo para su consulta**
-   >
-   >- **[Codigo B2](BT2.ino)**
---------------------------------------------------
+- **[ESP-NOW](./ESPNOW/README.md)**  
+  **Comunicación de baja latencia** entre múltiples dispositivos ESP32, sin necesidad de un router. Ideal para aplicaciones de red ad-hoc, donde la rapidez de la comunicación es crítica.
 
-### 3. B3 - Inicialización y Configuración Básica de Bluetooth
-Este proyecto demuestra cómo inicializar el Bluetooth en ESP32 de manera básica, configurando el dispositivo para que sea detectable y accesible para conexiones.
+---
 
-#### Descripción
-- **Objetivo:** Iniciar y habilitar la funcionalidad Bluetooth en el ESP32, configurando el dispositivo para que sea detectable y pueda aceptar conexiones Bluetooth.
+## 📘 ¿Por qué utilizar el ESP32?
 
-- **Funcionalidad:** Configura el ESP32 para que se pueda emparejar con dispositivos Bluetooth cercanos y permite cambiar el nombre del dispositivo.
+El ESP32 es un microcontrolador versátil que destaca por su capacidad de conexión, bajo consumo de energía y alto rendimiento. Gracias a sus características de conectividad como Bluetooth, WiFi y ESP-NOW, es ideal para proyectos IoT que requieren comunicación eficiente y autónoma entre dispositivos.
 
->**Codigo para su consulta**
-   >
-   >- **[Codigo B3](BT3.ino)**
+---
 
-------------------------------
-### 4. B4 - Control de LEDs con Bluetooth
-Este proyecto permite controlar dos LEDs conectados a los pines GPIO 2 y GPIO 14 del ESP32 mediante comandos enviados desde un dispositivo Bluetooth. Se encienden y apagan según los caracteres "1", "2", "3" y "4".
+## 👨‍💻 Autor
 
-#### Descripción
-
-- **Objetivo:** Controlar dos LEDs utilizando Bluetooth Serial. Se envían caracteres específicos para encender y apagar los LEDs.
-
-- **Funcionalidad:** El dispositivo Bluetooth envía caracteres:
-"1" enciende el LED en el pin GPIO 2.
-"2" apaga el LED en el pin GPIO 2.
-"3" enciende el LED en el pin GPIO 14.
-"4" apaga el LED en el pin GPIO 14.
-
->**Codigo para su consulta**
-   >
-   >- **[Codigo 4](BT4.ino)**
-----------------------
-### 5. B5 - Control de LED mediante Mensajes de Texto
-Este proyecto permite controlar un LED conectado al pin GPIO 2 del ESP32 mediante mensajes recibidos a través de Bluetooth. El mensaje "led_on" enciende el LED, y "led_off" lo apaga.
-
-#### Descripción
-- **Objetivo:** Controlar un LED mediante mensajes de texto enviados desde un dispositivo Bluetooth.
-
-- **Funcionalidad:** El dispositivo Bluetooth envía mensajes:
-"led_on" enciende el LED.
-"led_off" apaga el LED.
-
->**Codigo para su consulta**
-   >
-   >- **[Codigo B5](BT5.ino)**
-
-------------------------------
-### 6. B6 - Control de LED con Comandos Simples
-Este proyecto permite encender y apagar un LED conectado al pin GPIO 2 del ESP32 mediante comandos enviados por Bluetooth. Se utilizan los caracteres 'A' y 'B' para encender y apagar el LED, respectivamente.
-
-#### Descripción
-- **Objetivo:** Controlar un LED utilizando caracteres de control enviados a través de Bluetooth.
-
-- **Funcionalidad:** El dispositivo Bluetooth envía los siguientes comandos:
-'A' enciende el LED.
-'B' apaga el LED.
-
->**Codigo para su consulta**
-   >
-   >- **[Codigo B6](BT6.ino)**
----------------------
-## Requisitos Generales
-- **Hardware:** ESP32.
-
-- **Software:** Arduino IDE con la plataforma ESP32 instalada.
-
-- **Configuración:** Asegúrese de habilitar el soporte de Bluetooth en make menuconfig dentro de la configuración del ESP32 en el Arduino IDE.
-
--------------------------
-
-Estos proyectos demuestran las capacidades de la funcionalidad Bluetooth del ESP32 para la comunicación serial y el control de dispositivos. Se pueden extender para aplicaciones más avanzadas, como la automatización del hogar o el monitoreo remoto de dispositivos.
+**[Abraham Isai Lara Ariza](https://github.com/ahmAriza01)**  
+📧 *323030060@upjr.edu.mx*  
+📅 *Última actualización: 30 de marzo de 2025*
 
