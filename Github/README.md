@@ -61,6 +61,7 @@ Sigue estos pasos para crear un repositorio en GitHub:
    git remote add origin https://github.com/TuUsuario/TuRepositorio.git
    git add .
    git commit -m "Mi primer commit"
+   git push -u origin master
 
 ## 👨‍💻 Autor
 
@@ -68,5 +69,4 @@ Sigue estos pasos para crear un repositorio en GitHub:
 📧 *323030060@upjr.edu.mx*  
 📅 *Última actualización: 30 de marzo de 2025*
 
-   
-   git push -u origin master
+
