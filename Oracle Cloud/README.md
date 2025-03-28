@@ -76,3 +76,9 @@ Esta guía te mostrará paso a paso cómo crear una cuenta en Oracle Cloud y des
 
    ```bash
    ssh-keygen -t rsa -b 4096 -f ~/.ssh/oracle_key
+
+## 👨‍💻 Autor
+
+**[Abraham Isai Lara Ariza](https://github.com/ahmAriza01)**  
+📧 *abraham.lara@example.com*  
+📅 *Última actualización: 30 de marzo de 2025*
