@@ -1,4 +1,4 @@
-# 📚 Proyectos de Clase
+# 🎓 Proyectos Universitarios
 
 ¡Bienvenido! Este repositorio contiene una recopilación de proyectos desarrollados a lo largo de distintos temas vistos en clase. Cada sección incluye proyectos específicos y sus respectivos recursos.
 
