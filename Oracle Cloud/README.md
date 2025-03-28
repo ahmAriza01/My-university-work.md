@@ -40,8 +40,9 @@ Esta guía te mostrará paso a paso cómo crear una cuenta en Oracle Cloud y des
 2. Selecciona la opción **Instancias**.
 3. Haz clic en **Crear instancia**.
 
-![Menú Instancia](image.png)  
-![Crear Instancia](image-1.png)
+![Menú Instancia](image.png) 
+
+![Crear Instancia](/imgs/image-1.png)
 
 ---
 
