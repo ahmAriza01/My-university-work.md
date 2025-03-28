@@ -55,3 +55,9 @@ Gestión de repositorios usando Git y GitHub para control de versiones, portafol
 Este repositorio se encuentra bajo una licencia libre. Puedes usar, modificar y distribuir el código siempre y cuando se otorgue la atribución correspondiente.
 
 ---
+
+## 👨‍💻 Autor
+
+**[Abraham Isai Lara Ariza](https://github.com/ahmAriza01)**  
+📧 *323030060@upjr.edu.mx*  
+📅 *Última actualización: 30 de marzo de 2025*
