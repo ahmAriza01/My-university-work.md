@@ -195,5 +195,5 @@ Si la opción Let’s Encrypt no funciona automáticamente, puedes activarlo por
 
 ----
 
-##### 💡 Autor: [Juan Pablo Gonzalez Gasca]
-##### 📆 Última actualización: [28/Marzo/2025]
+##### 💡 Autor: [ABRAHAM ISAI LARA ARIZA]
+##### 📆 Última actualización: [30/Marzo/2025]
