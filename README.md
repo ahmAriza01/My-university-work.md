@@ -1,4 +1,4 @@
-# 🖥️ Mis Proyectos Universitarios
+#  Mis Proyectos Universitarios
 
 Este repositorio es una recopilación de los proyectos desarrollados durante mis estudios universitarios, abordando diversas áreas de la informática y la electrónica. Encuentra a continuación los enlaces a los proyectos y su respectiva descripción.
 
@@ -15,7 +15,7 @@ Este repositorio es una recopilación de los proyectos desarrollados durante mis
 
 ---
 
-## 🚀 Oracle Cloud
+## Oracle Cloud
 
 Accede a los proyectos relacionados con la configuración y administración de servicios en Oracle Cloud. Despliegue de bases de datos y más.
 
@@ -23,7 +23,7 @@ Accede a los proyectos relacionados con la configuración y administración de s
 
 ---
 
-## 🗂️ Bases de Datos
+##  Bases de Datos
 
 Aquí encontrarás proyectos relacionados con el uso de bases de datos en MySQL, consultas avanzadas y conexiones SSH.
 
@@ -31,7 +31,7 @@ Aquí encontrarás proyectos relacionados con el uso de bases de datos en MySQL,
 
 ---
 
-## 🌐 ESP32
+##  ESP32
 
 Proyectos de sistemas embebidos usando el microcontrolador ESP32. Incluye actividades como comunicación inalámbrica, WiFi y más.
 
@@ -39,7 +39,7 @@ Proyectos de sistemas embebidos usando el microcontrolador ESP32. Incluye activi
 
 ---
 
-## 💻 PHP
+##  PHP
 
 Desarrollo web con PHP, incluyendo la creación de sitios dinámicos, gestión de bases de datos y administración de servidores.
 
@@ -47,7 +47,7 @@ Desarrollo web con PHP, incluyendo la creación de sitios dinámicos, gestión d
 
 ---
 
-## 📈 GitHub
+##  GitHub
 
 Aquí se documentan mis proyectos de GitHub, donde gestiono repositorios y realizo despliegues de proyectos de forma colaborativa.
 
@@ -55,7 +55,7 @@ Aquí se documentan mis proyectos de GitHub, donde gestiono repositorios y reali
 
 ---
 
-## 🧑‍💻 Autor
+##  Autor
 
 **[Abraham Isai Lara Ariza](https://github.com/ahmAriza01)**  
 📧 *323030060@upjr.edu.mx*  
