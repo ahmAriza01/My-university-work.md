@@ -51,7 +51,7 @@ Desarrollo web con PHP, incluyendo la creación de sitios dinámicos, gestión d
 
 Aquí se documentan mis proyectos de GitHub, donde gestiono repositorios y realizo despliegues de proyectos de forma colaborativa.
 
-[🔗 Ver proyectos de GitHub](https://github.com/ahmAriza01/ReadMi.md/blob/main/Github/README.md](https://github.com/ahmAriza01))
+[🔗 Ver proyectos de GitHub](https://github.com/ahmAriza01)
 
 ---
 
