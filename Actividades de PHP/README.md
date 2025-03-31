@@ -1,12 +1,12 @@
-# 📉 Actividades de PHP
+#  Actividades de PHP
 ----
-## 📌 Proyecto Tabla Registro
+##  Proyecto Tabla Registro
 
 Este proyecto consiste en la creación de una tabla en una base de datos MySQL donde se insertan datos de sensores y se muestran en una página web. Se utiliza **PHP** y **MySQL** para gestionar la base de datos y la visualización de los datos.
 
 ---
 
-### 📖 Tecnologías Utilizadas
+###  Tecnologías Utilizadas
 
 - **PHP** (para la conexión y manipulación de la base de datos)
 - **MySQL** (para el almacenamiento de los datos)
@@ -16,11 +16,11 @@ Este proyecto consiste en la creación de una tabla en una base de datos MySQL d
 ---
 
 
-## 🛠 Configuración de la Base de Datos
+##  Configuración de la Base de Datos
 
 Antes de ejecutar el proyecto, debes asegurarte de que la base de datos está configurada correctamente.
 
-### 1️⃣ Crear la Base de Datos y la Tabla
+###  Crear la Base de Datos y la Tabla
 
 Ejecuta el siguiente comando SQL en **phpMyAdmin** o en la consola de MySQL para crear la base de datos y la tabla:
 
@@ -38,7 +38,7 @@ Ejecuta el siguiente comando SQL en **phpMyAdmin** o en la consola de MySQL para
 
 
 ### Archivos del Proyecto
-#### 1️⃣ `db_config.php` - Configuración de la Conexión a la Base de Datos
+####  `db_config.php` - Configuración de la Conexión a la Base de Datos
 Este archivo almacena la configuración de la conexión a MySQL.
 
 
@@ -58,7 +58,7 @@ Este archivo almacena la configuración de la conexión a MySQL.
     }
     ?>
 
-#### 2️⃣ `insert.php` - Insertar Datos en la Tabla
+####  `insert.php` - Insertar Datos en la Tabla
 Este script permite insertar datos en la tabla registro desde PHP.
 
     <?php
@@ -75,7 +75,7 @@ Este script permite insertar datos en la tabla registro desde PHP.
     $conn->close();
     ?>
 
-#### 3️⃣ `index.php` - Mostrar Datos en una Tabla
+####  `index.php` - Mostrar Datos en una Tabla
 Este script obtiene y muestra los datos almacenados en la base de datos.
 
     <?php
@@ -112,15 +112,15 @@ Este script obtiene y muestra los datos almacenados en la base de datos.
 
 ----
 
-# 📌 Proyecto Registro de Sensores
+#  Proyecto Registro de Sensores
 
 Este proyecto consiste en una API creada con PHP que recibe datos en formato **JSON** y los almacena en una base de datos MySQL. Es ideal para integrar con sistemas IoT o cualquier aplicación que requiera el almacenamiento de datos de sensores en tiempo real.
 
-## 🛠 Configuración de la Base de Datos
+##  Configuración de la Base de Datos
 
 Antes de ejecutar el proyecto, asegúrate de configurar correctamente la base de datos.
 
-### 1️⃣ Crear la Base de Datos y la Tabla
+###  Crear la Base de Datos y la Tabla
 
 Ejecuta el siguiente comando SQL en **phpMyAdmin** o en la consola de MySQL:
 
@@ -137,9 +137,9 @@ Ejecuta el siguiente comando SQL en **phpMyAdmin** o en la consola de MySQL:
     );
     
 --- 
-## 🚀 Archivos del Proyecto
+##  Archivos del Proyecto
 
-### 1️⃣ `db_config.php` - Configuración de la Conexión a la Base de Datos
+###  `db_config.php` - Configuración de la Conexión a la Base de Datos
 
 Este archivo se usa para conectar PHP con MySQL.
 
@@ -158,7 +158,7 @@ Este archivo se usa para conectar PHP con MySQL.
         }
         ?>
 
-### 2️⃣ `recibir_datos.php` - Recibir Datos y Guardarlos
+###  `recibir_datos.php` - Recibir Datos y Guardarlos
 Este archivo recibe datos en formato JSON a través de una solicitud POST, los procesa y los guarda en la base de datos.
 
     <?php
@@ -192,11 +192,11 @@ Este archivo recibe datos en formato JSON a través de una solicitud POST, los p
 
 
 -----
-# 📌 Proyecto Dientes (Bluetooth)
+#  Proyecto Dientes (Bluetooth)
 
 Este proyecto implementa un sistema para enviar datos desde un ESP32 a un servidor PHP utilizando Bluetooth Serial. Una vez recibidos los datos por Bluetooth, estos se envían a una base de datos MySQL a través de una API en PHP mediante una conexión WiFi.
 
-### 📖 Tecnologías Utilizadas
+###  Tecnologías Utilizadas
 
 - ESP32 (Placa de desarrollo)
 
@@ -211,14 +211,14 @@ Este proyecto implementa un sistema para enviar datos desde un ESP32 a un servid
 - Arduino IDE (Para programar el ESP32)
 ---
 
-#### 📁  Estructura del Proyecto
+####   Estructura del Proyecto
 - 📄 db_config.php          # Configuración de la base de datos
 - 📄 recibir_datos.php      # API que recibe los datos y los almacena en la BD
 -  📄 ESP32_Bluetooth.ino    # Código del ESP32 para recibir datos y enviarlos
 ---
 
-### 🚀 Archivos del Proyecto
-##### 📌 `db_config.php` - Configuración de la Conexión a la Base de Datos
+###  Archivos del Proyecto
+#####  `db_config.php` - Configuración de la Conexión a la Base de Datos
 Este archivo define la conexión entre PHP y MySQL
 
     <?php
@@ -235,7 +235,7 @@ Este archivo define la conexión entre PHP y MySQL
     ?>
 
 
-##### 📌`recibir_datos.php` - API para Recibir Datos y Guardarlos
+##### `recibir_datos.php` - API para Recibir Datos y Guardarlos
 Este archivo recibe los datos en JSON mediante una solicitud POST y los almacena en la base de datos.
 
     <?php
@@ -264,7 +264,7 @@ Este archivo recibe los datos en JSON mediante una solicitud POST y los almacena
     ?>
 ----
 
-### ⚡ Código del ESP32 con Bluetooth
+###  Código del ESP32 con Bluetooth
 Este código permite recibir datos desde Bluetooth Serial, procesarlos y enviarlos al servidor PHP.
 
     #include <WiFi.h>
@@ -346,12 +346,12 @@ Este código permite recibir datos desde Bluetooth Serial, procesarlos y enviarl
 ---
 
 
-## 🛠 Cómo Ejecutar los Proyecto
+##  Cómo Ejecutar los Proyecto
 
-#### 1️⃣ Subir los Archivos a un Servidor
+####  Subir los Archivos a un Servidor
 - Puedes usar XAMPP, MAMP o un servidor web que soporte PHP y MySQL en este caso con el que adquirimos y de este mismo ejecutamos las pticiones con los datos directamente.
 
-#### 2️⃣ Acceder desde el Navegador
+####  Acceder desde el Navegador
 
 - Para ver la tabla con los datos registrados, accede a:
 
@@ -359,7 +359,7 @@ https://ahmariza.store/c3.php
 
 ---
 
-### 📖 Recursos Adicionales
+###  Recursos Adicionales
 - 🔗 Guía Oficial de PHP y MySQL
 - 🔗 XAMPP - Servidor Local
 - 🔗 GitHub Pages
@@ -381,7 +381,7 @@ https://ahmariza.store/c3.php
 
 -----
 
-## 👨‍💻 Autor
+##  Autor
 
 **[Abraham Isai Lara Ariza](https://github.com/ahmAriza01)**  
 📧 *323030060@upjr.edu.mx*  
