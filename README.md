@@ -11,7 +11,7 @@ Este repositorio es una recopilación de los proyectos desarrollados durante mis
 3. [ESP32](#esp32)
 4. [PHP](#php)
 5. [GitHub](#github)
-6. [Licencia](#licencia)
+
 
 ---
 
