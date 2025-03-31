@@ -355,7 +355,7 @@ Este código permite recibir datos desde Bluetooth Serial, procesarlos y enviarl
 
 - Para ver la tabla con los datos registrados, accede a:
 
-https://bjpgg.site/tablas.php
+https://ahmariza.store/c3.php
 
 ---
 
