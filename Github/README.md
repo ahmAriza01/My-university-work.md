@@ -1,4 +1,4 @@
-# 🔎 Github
+#  Github
 ----------------
 ## Guía para Crear una Cuenta en GitHub y tu Primer Repositorio
 
@@ -42,7 +42,7 @@ Sigue estos pasos para crear un repositorio en GitHub:
 
 ---
 
-### 📁 Desde la Web
+###  Desde la Web
 
 1. En la página de tu repositorio, haz clic en **"Add file"** y selecciona **"Upload files"**.
 2. Arrastra y suelta los archivos o selecciona los archivos desde tu computadora.
@@ -63,8 +63,8 @@ Sigue estos pasos para crear un repositorio en GitHub:
    git commit -m "Mi primer commit"
    git push -u origin master
 
-# 📄 Guía para Crear y Publicar una Página Web en GitHub Pages
-## 1️⃣ Crear un Repositorio en GitHub
+#  Guía para Crear y Publicar una Página Web en GitHub Pages
+##  Crear un Repositorio en GitHub
 1. **Inicia sesión en GitHub**.
 
 2. **Haz clic en el ícono de tu perfil y selecciona "Your repositories"**.
@@ -80,7 +80,7 @@ Sigue estos pasos para crear un repositorio en GitHub:
 
 5. Haz clic en "Create repository".
 
-## 2️⃣ Crear los Archivos de tu Página Web Para que GitHub Pages funcione, necesitas al menos un archivo index.html.
+##  Crear los Archivos de tu Página Web Para que GitHub Pages funcione, necesitas al menos un archivo index.html.
 
 1. **En tu repositorio de GitHub, haz clic en "Add file" y selecciona "Create new file".**
 
@@ -107,7 +107,7 @@ Sigue estos pasos para crear un repositorio en GitHub:
 
 ---
 
-## 3️⃣ Activar GitHub Pages
+##  Activar GitHub Pages
 1. **Ve a la sección "Settings" de tu repositorio.**
 
 2. **En el menú lateral izquierdo, selecciona "Pages".**
@@ -122,7 +122,7 @@ Sigue estos pasos para crear un repositorio en GitHub:
    https://tu-usuario.github.io/mi-pagina-web/
  ```
 ---
-## 4️⃣ Opcional: Subir Archivos desde la Computadora con Git 
+##  Opcional: Subir Archivos desde la Computadora con Git 
 
 1. **Asegúrate de tener Git instalado. Puedes descargarlo desde git-scm.com.**
 2. **Abre la terminal y navega a la carpeta de tu proyecto:
@@ -143,12 +143,12 @@ cd ruta/de/tu/proyecto
    ```
 ---
 
-## 🌐 Página creada para Portafolio de Proyectos
+##  Página creada para Portafolio de Proyectos
 ### 🔗 [🎓 Proyectos Universitarios]([https://github.com/ahmAriza01](https://github.com/ahmAriza01/ReadMi.md/blob/main/README.md))
 
 ### **Este repositorio contiene un portafolio donde se subirán los trabajos y creaciones para vista del público interesado en temas de programación, microcontroladores y redes y telecomunicaciones.**
 ---
-## 👨‍💻 Autor
+##  Autor
 
 **[Abraham Isai Lara Ariza](https://github.com/ahmAriza01)**  
 📧 *323030060@upjr.edu.mx*  
