@@ -19,7 +19,7 @@ Este repositorio es una recopilación de los proyectos desarrollados durante mis
 
 Accede a los proyectos relacionados con la configuración y administración de servicios en Oracle Cloud. Despliegue de bases de datos y más.
 
-[🔗 Ver proyectos en Oracle Cloud](https://github.com/ahmAriza01/ReadMi.md/blob/main/Oracle%20Cloud/README.md)
+[🔗 Ver proyectos en Oracle Cloud](https://github.com/ahmAriza01/My-university-work.md/blob/main/Oracle%20Cloud/README.md)
 
 ---
 
@@ -27,7 +27,7 @@ Accede a los proyectos relacionados con la configuración y administración de s
 
 Aquí encontrarás proyectos relacionados con el uso de bases de datos en MySQL, consultas avanzadas y conexiones SSH.
 
-[🔗 Ver proyectos de Bases de Datos](https://github.com/ahmAriza01/ReadMi.md/blob/main/Base%20de%20Datos/README.md)
+[🔗 Ver proyectos de Bases de Datos](https://github.com/ahmAriza01/My-university-work.md/blob/main/Base%20de%20Datos/README.md)
 
 ---
 
@@ -35,7 +35,7 @@ Aquí encontrarás proyectos relacionados con el uso de bases de datos en MySQL,
 
 Proyectos de sistemas embebidos usando el microcontrolador ESP32. Incluye actividades como comunicación inalámbrica, WiFi y más.
 
-[🔗 Ver proyectos con ESP32](https://github.com/ahmAriza01/ReadMi.md/blob/main/Actividades%20con%20ESP32/README.md)
+[🔗 Ver proyectos con ESP32](https://github.com/ahmAriza01/My-university-work.md/blob/main/Actividades%20con%20ESP32/README.md)
 
 ---
 
@@ -43,7 +43,7 @@ Proyectos de sistemas embebidos usando el microcontrolador ESP32. Incluye activi
 
 Desarrollo web con PHP, incluyendo la creación de sitios dinámicos, gestión de bases de datos y administración de servidores.
 
-[🔗 Ver proyectos en PHP](https://github.com/ahmAriza01/ReadMi.md/blob/main/Actividades%20de%20PHP/README.md)
+[🔗 Ver proyectos en PHP](https://github.com/ahmAriza01/My-university-work.md/blob/main/Actividades%20de%20PHP/README.md)
 
 ---
 
@@ -51,7 +51,7 @@ Desarrollo web con PHP, incluyendo la creación de sitios dinámicos, gestión d
 
 Aquí se documentan mis proyectos de GitHub, donde gestiono repositorios y realizo despliegues de proyectos de forma colaborativa.
 
-[🔗 Ver proyectos de GitHub](https://github.com/ahmAriza01)
+[🔗 Ver proyectos de GitHub](https://github.com/ahmAriza01/My-university-work.md/blob/main/Github/README.md)
 
 ---
 
