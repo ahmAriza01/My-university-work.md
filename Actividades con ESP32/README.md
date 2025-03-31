@@ -1,10 +1,10 @@
-# 🔌 Actividades con ESP32
+#  Actividades con ESP32
 
 Este apartado documenta las diversas actividades realizadas con el **ESP32**, un microcontrolador de alto rendimiento que permite la comunicación inalámbrica, el bajo consumo de energía y la transmisión de datos. En este proyecto, exploramos varios protocolos y métodos para maximizar el rendimiento y la eficiencia del ESP32 en aplicaciones IoT.
 
 ---
 
-## 📌 Contenido
+##  Contenido
 
 A continuación, encontrarás una lista de los temas cubiertos en relación con el ESP32:
 
@@ -22,13 +22,13 @@ A continuación, encontrarás una lista de los temas cubiertos en relación con 
 
 ---
 
-## 📘 ¿Por qué utilizar el ESP32?
+##  ¿Por qué utilizar el ESP32?
 
 El ESP32 es un microcontrolador versátil que destaca por su capacidad de conexión, bajo consumo de energía y alto rendimiento. Gracias a sus características de conectividad como Bluetooth, WiFi y ESP-NOW, es ideal para proyectos IoT que requieren comunicación eficiente y autónoma entre dispositivos.
 
 ---
 
-## 👨‍💻 Autor
+##  Autor
 
 **[Abraham Isai Lara Ariza](https://github.com/ahmAriza01)**  
 📧 *323030060@upjr.edu.mx*  
