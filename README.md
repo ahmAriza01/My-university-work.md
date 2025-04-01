@@ -17,6 +17,9 @@ Este repositorio es una recopilación de los proyectos desarrollados durante mis
 
 ## Oracle Cloud
 
+![Oracle Cloud](oracle.png)
+
+
 Accede a los proyectos relacionados con la configuración y administración de servicios en Oracle Cloud. Despliegue de bases de datos y más.
 
 [🔗 Ver proyectos en Oracle Cloud](https://github.com/ahmAriza01/My-university-work.md/blob/main/Oracle%20Cloud/README.md)
