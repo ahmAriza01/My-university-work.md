@@ -19,7 +19,6 @@ Este repositorio es una recopilación de los proyectos desarrollados durante mis
 
 ![Oracle Cloud](oracle.png)
 
-
 Accede a los proyectos relacionados con la configuración y administración de servicios en Oracle Cloud. Despliegue de bases de datos y más.
 
 [🔗 Ver proyectos en Oracle Cloud](https://github.com/ahmAriza01/My-university-work.md/blob/main/Oracle%20Cloud/README.md)
@@ -27,6 +26,8 @@ Accede a los proyectos relacionados con la configuración y administración de s
 ---
 
 ##  Bases de Datos
+
+![Bases de datos](data-base.png)
 
 Aquí encontrarás proyectos relacionados con el uso de bases de datos en MySQL, consultas avanzadas y conexiones SSH.
 
@@ -36,6 +37,8 @@ Aquí encontrarás proyectos relacionados con el uso de bases de datos en MySQL,
 
 ##  ESP32
 
+![ESP32](esp32.png)
+
 Proyectos de sistemas embebidos usando el microcontrolador ESP32. Incluye actividades como comunicación inalámbrica, WiFi y más.
 
 [🔗 Ver proyectos con ESP32](https://github.com/ahmAriza01/My-university-work.md/blob/main/Actividades%20con%20ESP32/README.md)
@@ -44,6 +47,8 @@ Proyectos de sistemas embebidos usando el microcontrolador ESP32. Incluye activi
 
 ##  PHP
 
+![PHP](php.png)
+
 Desarrollo web con PHP, incluyendo la creación de sitios dinámicos, gestión de bases de datos y administración de servidores.
 
 [🔗 Ver proyectos en PHP](https://github.com/ahmAriza01/My-university-work.md/blob/main/Actividades%20de%20PHP/README.md)
@@ -51,6 +56,8 @@ Desarrollo web con PHP, incluyendo la creación de sitios dinámicos, gestión d
 ---
 
 ##  GitHub
+
+![GIthub](git.png)
 
 Aquí se documentan mis proyectos de GitHub, donde gestiono repositorios y realizo despliegues de proyectos de forma colaborativa.
 
